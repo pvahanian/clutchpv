@@ -1,6 +1,6 @@
 import {Route} from 'react-router-dom'
 //import PrivateRoute from '../src/components/PrivateRoute.js'
-import Login from './components/Login.js'
+import Login from './pages/Login.js'
 import './App.css';
 
 function App() {
