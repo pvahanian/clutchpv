@@ -13,7 +13,7 @@ const [stats, setStats] = useState(defaultValues);
 const [moreStats, setMoreStats] = useState(defaultValues);
 const [user, setUser] = useState("user1"); // this needs to change to grab the handle of the current athlete page
 useEffect(() => {
-    axios.get(`https://us-central1-clutch-f0902.cloudfunctions.net/api/user/${user}`)
+    axios.get(`/user/${user}`)
     .then((res)=>{
         setStats(res.data.playerStats[0])
         setMoreStats(res.data.user)
