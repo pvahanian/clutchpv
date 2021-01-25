@@ -12,6 +12,7 @@ function Stats() {
 const [stats, setStats] = useState(defaultValues);
 const [moreStats, setMoreStats] = useState(defaultValues);
 const [user, setUser] = useState("user1"); // this needs to change to grab the handle of the current athlete page
+
 useEffect(() => {
     axios.get(`/user/${user}`)
     .then((res)=>{
@@ -34,7 +35,7 @@ return(
                     <div  className="stats">fPTS <h3>Need</h3></div>
         </div>
         <h2>More Stats</h2>
-        <div className="stats-more">
+        {/* <div className="stats-more">
                     <div  className="morestats">Birth City <h3>{moreStats.birthCity}</h3></div>
                     <div  className="morestats">Birth Country <h3>{moreStats.birthCountry}</h3></div>
                     <div  className="morestats">Birth Month <h3>{moreStats.birthMonth}</h3></div>
@@ -49,7 +50,7 @@ return(
                     <div  className="morestats">teamBirthYear <h3>{moreStats.teamBirthYear}</h3></div>
                     <div  className="morestats">teamName <h3>{moreStats.teamName}</h3></div>
                     <div  className="morestats">teamTier <h3>{moreStats.teamTier}</h3></div>
-        </div>
+        </div> */}
     </div>
 )
 }
