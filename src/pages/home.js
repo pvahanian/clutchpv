@@ -12,7 +12,7 @@ export class home extends Component {
           <Grid item sm />
           <Grid item sm>
             <AthleteCard />
-            <Stats />
+            {/* <Stats /> */}
           </Grid>
           <Grid item sm />
         </Grid>

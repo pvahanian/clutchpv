@@ -34,7 +34,7 @@ return(
                     <div  className="stats">+ / - <h3>{stats.plusMinus}</h3></div>
                     <div  className="stats">fPTS <h3>Need</h3></div>
         </div>
-        <h2>More Stats</h2>
+        {/* <h2>More Stats</h2> */}
         {/* <div className="stats-more">
                     <div  className="morestats">Birth City <h3>{moreStats.birthCity}</h3></div>
                     <div  className="morestats">Birth Country <h3>{moreStats.birthCountry}</h3></div>
