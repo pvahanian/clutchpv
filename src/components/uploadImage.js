@@ -24,8 +24,8 @@ function UploadImage() {
 
     return(
     
-    <div class="image-upload">
-        <label for="file-input">
+    <div className="image-upload">
+        <label htmlFor="file-input">
         <img id="upload" src={upload} alt="upload logo"/>
         </label>
         <input id="file-input" type="file" onChange={uploadSelectedHandler} />

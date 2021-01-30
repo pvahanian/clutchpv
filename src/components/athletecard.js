@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import UploadImage from './uploadImage'
-import '../App.css';
+import UploadImage from "./uploadImage";
+import Stats from "./stats";
+import "../App.css";
 
 const defaultValues = {
   gamesPlayed: "Loading",
@@ -59,34 +60,49 @@ function AthleteCard() {
   // C | 5' 11" | 200 lb | Age: 33 | Pittsburgh Penguins
   return (
     <div>
-      <div className="stats-holder">
-        <div className="stats">
-          <div className="profileimg">
-          <img
-            id="athleteimg"
-            src={athleteInfo.imageUrl}
-            alt="athlete profile"
-          />
-          {UploadImage()}
+      <div className="athleteProfile">
+        <div className="profileimg">
+          <div className="gradient">
+            <img
+              className="child athleteimg"
+              src={athleteInfo.imageUrl}
+              alt="athlete profile"
+            />
           </div>
-          <h2>
-            {athleteInfo.fName} {athleteInfo.lName} | #
-            {athleteInfo.playerNumber}
-          </h2>
-          <h3 id="playerBioStats">
-            {athleteInfo.playerPosition}
-            {} | {athleteInfo.playerHeight} inches |{athleteInfo.playerWeight}{" "}
-            lb | Age: {2021 - athleteInfo.birthYear} |
+          <div className="nameAndImageUpload">
+            <h2 className="athleteNames"> {athleteInfo.fName}</h2>
+            <h2 className="athleteNames"> {athleteInfo.lName}</h2>
+            <div className="athleteNumber"> # {athleteInfo.playerNumber}</div>
+          </div>
+          <br></br>
+        </div>
+        <div className="informationHolder">
+          <div className="teamHolder">
             <img
               id="athleteLogo"
               src="https://pbs.twimg.com/profile_images/903074788947656704/RujtsmZu_normal.jpg"
               alt="logo"
             ></img>
-            {athleteInfo.teamName}
-          </h3>
+            <div className="teamInfo">
+              <h3>{athleteInfo.teamName}</h3>
+              <p>
+                {athleteInfo.teamAgeGroup} {athleteInfo.teamTier}
+              </p>
+            </div>
+          </div>
+
+          {UploadImage()}
         </div>
+        <Stats />
       </div>
     </div>
   );
 }
 export default AthleteCard;
+
+
+{/* <h3 id="playerBioStats">
+{athleteInfo.playerPosition}
+{} | {athleteInfo.playerHeight} inches |{athleteInfo.playerWeight}{" "}
+lb | Age: {2021 - athleteInfo.birthYear} |
+</h3> */}

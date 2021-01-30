@@ -27,12 +27,12 @@ useEffect(() => {
 return(
     <div>
         <div className="stats-holder">
-                    <div  className="stats">Games Played <h3>{stats.gamesPlayed}</h3></div>
-                    <div  className="stats">Goals <h3>{stats.goals}</h3></div>
-                    <div  className="stats">Assists <h3>{stats.assists}</h3></div>
-                    <div  className="stats">Points <h3>{stats.points}</h3></div>
+                    <div  className="stats">GP <h3>{stats.gamesPlayed}</h3></div>
+                    <div  className="stats">G <h3>{stats.goals}</h3></div>
+                    <div  className="stats">A <h3>{stats.assists}</h3></div>
+                    <div  className="stats">PTS <h3>{stats.points}</h3></div>
                     <div  className="stats">+ / - <h3>{stats.plusMinus}</h3></div>
-                    <div  className="stats">fPTS <h3>Need</h3></div>
+                    {/* <div  className="stats">fPTS <h3>Need</h3></div> */}
         </div>
         {/* <h2>More Stats</h2> */}
         {/* <div className="stats-more">
