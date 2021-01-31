@@ -72,8 +72,9 @@ function AthleteCard() {
           <div className="nameAndImageUpload">
             <h2 className="athleteNames"> {athleteInfo.fName}</h2>
             <h2 className="athleteNames"> {athleteInfo.lName}</h2>
-            <div className="athleteNumber"> # {athleteInfo.playerNumber}</div>
           </div>
+          <div className="athleteNumber">  # {athleteInfo.playerNumber} {UploadImage()}   </div>
+
           <br></br>
         </div>
         <div className="informationHolder">
@@ -91,7 +92,8 @@ function AthleteCard() {
             </div>
           </div>
 
-          {UploadImage()}
+     
+
         </div>
         <Stats />
       </div>

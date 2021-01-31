@@ -24,12 +24,12 @@ function UploadImage() {
 
     return(
     
-    <div className="image-upload">
+    <span className="image-upload">
         <label htmlFor="file-input">
         <img id="upload" src={upload} alt="upload logo"/>
         </label>
         <input id="file-input" type="file" onChange={uploadSelectedHandler} />
-    </div>
+    </span>
 
     )
 }
