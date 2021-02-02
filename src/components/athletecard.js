@@ -24,7 +24,6 @@ function AthleteCard() {
       .get(`/user/`)
       .then((res) => {
         console.log(res.data.playerCard);
-
         setAthleteInfo(res.data.playerCard);
         // setStats(res.data.playerStats[0])
         // setMoreStats(res.data.user)
@@ -73,7 +72,10 @@ function AthleteCard() {
             <h2 className="athleteNames"> {athleteInfo.fName}</h2>
             <h2 className="athleteNames"> {athleteInfo.lName}</h2>
           </div>
-          <div className="athleteNumber">  # {athleteInfo.playerNumber} {UploadImage()}   </div>
+          <div className="athleteNumber">
+            {" "}
+            # {athleteInfo.playerNumber} {UploadImage()}{" "}
+          </div>
 
           <br></br>
         </div>
@@ -91,9 +93,6 @@ function AthleteCard() {
               </p>
             </div>
           </div>
-
-     
-
         </div>
         <Stats />
       </div>
@@ -102,9 +101,10 @@ function AthleteCard() {
 }
 export default AthleteCard;
 
-
-{/* <h3 id="playerBioStats">
+{
+  /* <h3 id="playerBioStats">
 {athleteInfo.playerPosition}
 {} | {athleteInfo.playerHeight} inches |{athleteInfo.playerWeight}{" "}
 lb | Age: {2021 - athleteInfo.birthYear} |
-</h3> */}
+</h3> */
+}
