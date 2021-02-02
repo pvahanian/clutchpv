@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Stats from "../components/stats";
+// import Stats from "../components/stats";
 import AthleteCard from "../components/athletecard";
 
 import Grid from "@material-ui/core/Grid";

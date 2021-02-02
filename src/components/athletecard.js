@@ -95,16 +95,9 @@ function AthleteCard() {
           </div>
         </div>
         <Stats />
+        {setUser("user1")}
       </div>
     </div>
   );
 }
 export default AthleteCard;
-
-{
-  /* <h3 id="playerBioStats">
-{athleteInfo.playerPosition}
-{} | {athleteInfo.playerHeight} inches |{athleteInfo.playerWeight}{" "}
-lb | Age: {2021 - athleteInfo.birthYear} |
-</h3> */
-}

@@ -231,7 +231,7 @@ a {
   padding: 2%;
   height: 40vh;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .bioStatsTable{
