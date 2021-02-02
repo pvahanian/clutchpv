@@ -95,7 +95,7 @@ function AthleteCard() {
           </div>
         </div>
         <Stats />
-        {setUser("user1")}
+        {/* {setUser("user1")} */}
       </div>
     </div>
   );

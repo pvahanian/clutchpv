@@ -1,34 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/19d93ed94fcde59d609dd56bb0f1e9f0?family=SF+UI+Display);
-@import url(//db.onlinewebfonts.com/c/020c89bf0413efe31c843506db6735d2?family=SF+UI+Display);
-font-face {
-  font-family: "SF UI Display";
-  src: url("//db.onlinewebfonts.com/t/19d93ed94fcde59d609dd56bb0f1e9f0.eot");
-  src: url("//db.onlinewebfonts.com/t/19d93ed94fcde59d609dd56bb0f1e9f0.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/19d93ed94fcde59d609dd56bb0f1e9f0.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/19d93ed94fcde59d609dd56bb0f1e9f0.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/19d93ed94fcde59d609dd56bb0f1e9f0.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/19d93ed94fcde59d609dd56bb0f1e9f0.svg#SF UI Display")
-      format("svg");
-}
-@font-face {
-  font-family: "SF UI Display";
-  src: url("//db.onlinewebfonts.com/t/020c89bf0413efe31c843506db6735d2.eot");
-  src: url("//db.onlinewebfonts.com/t/020c89bf0413efe31c843506db6735d2.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/020c89bf0413efe31c843506db6735d2.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/020c89bf0413efe31c843506db6735d2.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/020c89bf0413efe31c843506db6735d2.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/020c89bf0413efe31c843506db6735d2.svg#SF UI Display")
-      format("svg");
-}
-
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
