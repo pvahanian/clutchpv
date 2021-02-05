@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import axios from "axios";
 import UploadImage from "./uploadImage";
+import UploadVideo from "./uploadVideo";
 import Stats from "./stats";
 import "../App.css";
 
@@ -25,38 +26,25 @@ function AthleteCard() {
       .then((res) => {
         console.log(res.data.playerCard);
         setAthleteInfo(res.data.playerCard);
-        // setStats(res.data.playerStats[0])
-        // setMoreStats(res.data.user)
-        // // console.log(res.data.playerStats[0])
       })
       .catch((error) => {
+        setUser()
         console.log(error);
       });
   }, [user]);
 
-  //   birthCity: "Salt Lake"
-  // birthCountry: "USA"
-  // birthMonth: "November"
-  // birthYear: "2008"
-  // createAt: "2020-11-17T01:44:13.959Z"
-  // email: "user1@test.com"
-  // fName: "Shaeffer"
-  // handle: "user1"
-  // imageUrl: "https://firebasestorage.googleapis.com/v0/b/clutch-f0902.appspot.com/o/2153029.jpg?alt=media"
-  // lName: "Gordon-Carroll"
-  // otherSports: "Baseball, Golf"
-  // playerHeight: "64"
-  // playerNumber: "77"
-  // playerPosition: "Left Wing"
-  // playerShotHand: "Right"
-  // playerWeight: "119"
-  // teamAgeGroup: "12U"
-  // teamBirthYear: "2008"
-  // teamName: "Chicago Mission"
-  // teamTier: "AAA"
-  // userId: "msj5i5PpnOewQHPiZAtcMaxb82M2"
+  // function runVideo(props) {
+  //   const vidRef = useRef(null);
+  //   const handlePlayVideo = () => {
+  //     vidRef.current.play();
+  //   }
+  //   return (
+  //     <video ref={vidRef}>
+  //       <source src={[YOUR_SOURCE]} type="video/mp4" />
+  //     </video>
+  //   )
+  // }
 
-  // C | 5' 11" | 200 lb | Age: 33 | Pittsburgh Penguins
   return (
     <div>
       <div className="athleteProfile">
@@ -94,9 +82,19 @@ function AthleteCard() {
             </div>
           </div>
         </div>
-        <Stats />
         {/* {setUser("user1")} */}
+
       </div>
+      <Stats />
+      {UploadVideo()}{" "}
+      
+
+      <video src={athleteInfo.videoUrl} type="video/mp4"></video>
+
+     
+
+
+
     </div>
   );
 }

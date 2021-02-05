@@ -164,7 +164,7 @@ a {
   height: 11vh;
   /* border:1px solid green; */
 }
-.stats {
+.stats{
   margin-left: 1%;
   font-size: 16px;
   font-weight: 600;
@@ -180,7 +180,12 @@ a {
   background-color: #f7f7f7;
   font-weight: bold;
   line-height: 0px;
+  cursor: pointer;
 }
+.on{
+background-color: #25B0FF;
+}
+
 .stats h3 {
   font-size: 36px;
   line-height: 0px;
@@ -195,12 +200,13 @@ a {
   background-color: black;
   line-height: 0px;
   height: 20vh;
-}
-.bioStats {
   padding: 2%;
   height: 40vh;
   display: flex;
   justify-content: flex-start;
+}
+.bioStatsOff{
+  display:none;
 }
 
 .bioStatsTable{
@@ -232,3 +238,37 @@ a {
 /* * {
   border: 1px solid green;
 } */
+
+@media only screen and (max-width: 600px) {
+  body {
+  background-color: lightgrey;
+  margin:0;
+  }
+  .athleteProfile{
+    width:100%;
+  }
+  .profileimg{
+    width: 100vw;
+  }
+  .athleteimg{
+    width: 100vw;
+  }
+  #athleteLogo{
+    width: auto;
+  }
+  .informationHolder{
+    width: 100%;
+  }
+  .statContainer{
+    width: 100%;
+  }
+  .stats-holder{
+    width: 100%;
+  }
+  .gradient{
+    width: 100%;
+  }
+  .stats{
+    width: 11vw;
+  }
+}
