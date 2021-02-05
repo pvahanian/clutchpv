@@ -48,7 +48,7 @@ function Stats() {
   }, [user]);
 
   function logToScreen() {
-    if (bioStatsChoice === "bioStatsOff") {
+    if (bioStatsChoice === "bioStatsOff") { 
       setbioStatsChoice("bioStats");
     } else {
       setbioStatsChoice("bioStatsOff");

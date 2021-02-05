@@ -23,7 +23,7 @@ a {
   flex-direction: column;
   /* justify-items:center; */
   /* justify-content:center; */
-  align-items: center;
+  align-items: flex-start;
 }
 .informationHolder {
   margin-top: 1vh;
@@ -45,7 +45,7 @@ a {
 }
 
 #upload {
-  width: 5%;
+  width: 5vw;
   cursor: pointer;
 }
 
@@ -238,7 +238,11 @@ background-color: #25B0FF;
 /* * {
   border: 1px solid green;
 } */
-
+@media only screen and (max-width: 900px) {
+  #upload{
+    width: 4vw;
+  }
+}
 @media only screen and (max-width: 700px) {
   body {
   background-color: lightgrey;
@@ -270,5 +274,27 @@ background-color: #25B0FF;
   }
   .stats{
     width: 11vw;
+  }
+  #upload{
+    width: 5vw;
+  }
+  .stats h3{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nameAndImageUpload {
+    width: 100%;
+  }
+  h2{
+    font-size: 12px;
+  }
+  .stats{
+    width: 13vw;
+    font-size: 14px;
+  }
+  .stats h3{
+    font-size: 20px;
   }
 }
