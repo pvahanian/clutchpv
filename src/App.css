@@ -239,7 +239,7 @@ background-color: #25B0FF;
   border: 1px solid green;
 } */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body {
   background-color: lightgrey;
   margin:0;
